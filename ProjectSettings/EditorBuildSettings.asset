@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/tutorial'/s4.unity
     guid: 160809e1988150540805e0e795e60d04
   - enabled: 1
+    path: Assets/Scenes/Stage 1.unity
+    guid: 7e0a75b7d92dd8740920d14766ef9811
+  - enabled: 1
     path: Assets/Scenes/Stage.unity
     guid: edc616558ff818441a66276114a8c8fe
   - enabled: 1
@@ -74,4 +77,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/stages/10.unity
     guid: c9e83ccc9f81a9846933d1caa1353e26
+  - enabled: 1
+    path: Assets/Scenes/stages/11.unity
+    guid: 639337be321b6f946850d059c7abe278
+  - enabled: 1
+    path: Assets/Scenes/stages/12.unity
+    guid: ddf74fa03f5bf07488f58c3870fde82b
+  - enabled: 1
+    path: Assets/Scenes/stages/13.unity
+    guid: 68835529d48913c4c8b0e2688778826a
   m_configObjects: {}

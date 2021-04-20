@@ -44,7 +44,7 @@ public class ButtonCon : MonoBehaviour
     }
     public void s_play()
     {
-        StartCoroutine(LoadScene("Stage"));
+        StartCoroutine(LoadScene("Stage 1"));
     }
     public void s_opt()
     {
@@ -84,7 +84,7 @@ public class ButtonCon : MonoBehaviour
     }
     public void s8()
     {
-        StartCoroutine(LoadScene("8"));
+        StartCoroutine(LoadScene("11"));
     }
     public void s9()
     {
@@ -93,6 +93,21 @@ public class ButtonCon : MonoBehaviour
     public void s10()
     {
         StartCoroutine(LoadScene("10"));
+    }
+    
+    public void s11()
+    {
+        StartCoroutine(LoadScene("8"));
+    }
+    
+    public void s12()
+    {
+        StartCoroutine(LoadScene("12"));
+    }
+    
+    public void s13()
+    {
+        StartCoroutine(LoadScene("13"));
     }
     public void ReStart()
     {

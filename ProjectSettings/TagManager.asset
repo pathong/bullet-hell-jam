@@ -11,6 +11,7 @@ TagManager:
   - block
   - ground
   - spike
+  - portal
   layers:
   - Default
   - TransparentFX

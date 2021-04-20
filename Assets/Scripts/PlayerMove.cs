@@ -43,8 +43,11 @@ public class PlayerMove : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(rayOrigin.transform.position, Vector2.down, rayCheckDistance);
             if (hit.collider != null) //(hit.collider.tag == "ground" || hit.collider.tag == "block")
             {
-                jump_audio.Play();
-                rb.AddForce(Vector2.up * jump, ForceMode2D.Impulse);
+                if(hit.collider.gameObject.tag != "boss" &&  hit.collider.gameObject.tag != "portal"){
+                    jump_audio.Play();
+                    rb.AddForce(Vector2.up * jump, ForceMode2D.Impulse);
+                }
+
             }
         }
         rb.velocity = new Vector3(x * speed, rb.velocity.y, 0);

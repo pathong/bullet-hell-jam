@@ -133,7 +133,7 @@ public class ButtonCon : MonoBehaviour
         StartCoroutine(LoadScene("s5"));
     }
     public void t6()
-    {
+    {   
         StartCoroutine(LoadScene("s6"));
     }
 

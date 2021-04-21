@@ -25,9 +25,15 @@ public class Con1 : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
+            if(Input.GetKey(KeyCode.Mouse0))
+            {
+                return;
+            }
+            else
+            {
+                StartCoroutine(LoadScene_i(SceneManager.GetActiveScene().buildIndex + 1));
+            }
 
-            //print(scene.name);
-            StartCoroutine(LoadScene_i(SceneManager.GetActiveScene().buildIndex + 1));
 
         }
 

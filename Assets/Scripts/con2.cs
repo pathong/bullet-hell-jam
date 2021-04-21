@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Con1 : MonoBehaviour
+public class con2 : MonoBehaviour
 {
-    private Scene scene;
+
     public Animator transitionAnim;
     // Start is called before the first frame update
     void Start()
     {
 
-        Scene scene = SceneManager.GetActiveScene();
+
 
     }
     IEnumerator LoadScene_i(int s)
@@ -25,13 +25,8 @@ public class Con1 : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-
-            //print(scene.name);
-            StartCoroutine(LoadScene_i(SceneManager.GetActiveScene().buildIndex + 1));
-
+            StartCoroutine(LoadScene_i(0));
         }
 
     }
-
-    
 }

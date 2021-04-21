@@ -27,6 +27,12 @@ public class PlayerMove : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
+        if(collision.gameObject.tag == "end")
+        {
+            print("stop");
+            this.enabled = false;
+        }
         if(collision.gameObject.tag == "enemy_bullet")
         {
             Instantiate(par, transform.position, Quaternion.identity);
@@ -43,7 +49,7 @@ public class PlayerMove : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(rayOrigin.transform.position, Vector2.down, rayCheckDistance);
             if (hit.collider != null) //(hit.collider.tag == "ground" || hit.collider.tag == "block")
             {
-                if(hit.collider.gameObject.tag != "boss" &&  hit.collider.gameObject.tag != "portal"){
+                if(hit.collider.gameObject.tag != "boss" &&  hit.collider.gameObject.tag != "portal" && hit.collider.gameObject.tag != "end"){
                     jump_audio.Play();
                     rb.AddForce(Vector2.up * jump, ForceMode2D.Impulse);
                 }

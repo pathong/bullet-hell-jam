@@ -42,6 +42,7 @@ public class ButtonCon : MonoBehaviour
     {
         StartCoroutine(LoadScene("s1"));
     }
+
     public void s_play()
     {
         StartCoroutine(LoadScene("Stage 1"));
@@ -109,6 +110,14 @@ public class ButtonCon : MonoBehaviour
     {
         StartCoroutine(LoadScene("13"));
     }
+    public void s14()
+    {
+        StartCoroutine(LoadScene("14"));
+    }
+    public void s15()
+    {
+        StartCoroutine(LoadScene("15"));
+    }
     public void ReStart()
     {
         StartCoroutine(LoadScene_i(SceneManager.GetActiveScene().buildIndex));
@@ -123,7 +132,10 @@ public class ButtonCon : MonoBehaviour
     public void t5(){
         StartCoroutine(LoadScene("s5"));
     }
-
+    public void t6()
+    {
+        StartCoroutine(LoadScene("s6"));
+    }
 
 }
 
